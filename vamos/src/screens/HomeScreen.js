@@ -6,7 +6,7 @@ const HomeScreen = () => {
     <ImageBackground source={''} style={styles.backgroundImage}>
     <View style={styles.container}>
       {/* Your page content here */}
-      <Text style={styles.text}>Welcome to Vamos</Text>
+      <Text style={styles.text}>Welcome to Vamoss</Text>
       {/* Other components */}
     </View>
   </ImageBackground>
