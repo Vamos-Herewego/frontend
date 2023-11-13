@@ -1,37 +1,32 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { ImageBackground, View, Text, StyleSheet } from 'react-native';
 
-const HomeScreen = ({ navigation }) => {
-  // You can use the 'navigation' prop to navigate to other screens.
-
-  const handleButtonPress = () => {
-    // Define the logic to navigate to another screen here.
-    // Example: navigation.navigate('OtherScreen');
-  };
-
+const HomeScreen = () => {
   return (
+    <ImageBackground source={''} style={styles.backgroundImage}>
     <View style={styles.container}>
-      <Text style={styles.header}>Welcome to My Stadium App</Text>
-      <Text style={styles.message}>Reserve your seats for upcoming events!</Text>
-      <Button title="Start Reserving" onPress={handleButtonPress} />
+      {/* Your page content here */}
+      <Text style={styles.text}>Welcome to Vamos</Text>
+      {/* Other components */}
     </View>
+  </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover', // You can set 'cover' or 'contain' based on your design preference.
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  header: {
+  text: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  message: {
-    fontSize: 18,
-    marginBottom: 20,
+    color: 'white', // Set text color for readability on the background
   },
 });
 
